@@ -19,5 +19,5 @@ from first_app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index, name='index'),
+    path('age/<age>/', views.show_age, name='show_age'),
 ]
